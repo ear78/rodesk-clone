@@ -1,0 +1,335 @@
+
+/* colors fonts
+light sea green = #5BD8B2
+lightgraytext = #9E9D9A
+darkbrown = #3E3C36
+lightgraybckgnd = #f2f2f2
+font-family: 'Open Sans', sans-serif;
+font-family: 'Helvetica', sans-serif; main body font
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+
+
+*/
+
+/* FONTS */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Source+Sans+Pro:200';
+
+/*
+* {
+    box-sizing: border-box;
+}*/
+
+/*a,body {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+main {
+    background-color: white;
+}*/
+
+/* HEADER CSS FOR INDEX.HTML */
+
+/*.margin-btm {
+    margin-bottom: 40px;
+ }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.menu-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+    right: 10px;
+    z-index: 99;
+    top: 10px;
+    right: 25px;
+}*/
+
+.culture-main-pic-top-container {
+    position: relative;
+    padding-top: 6%;
+    margin: 0 auto;
+    width: 95%;
+    height: 850px;
+    background: url('../img/culturebackgroundimg.jpg');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+.culture-pic-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    background: linear-gradient(rgba(62,60,54,1), 99%, rgba(62,60,54,.0));
+    color: black;
+    position: absolute;
+
+}
+
+.culture-backgroundimg-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.culture-main-headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+.culture-color {
+    color: #5BD8B2;
+}
+
+.culture-backgroundimg-text-top {
+    margin: 0 0 35px 0;
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #9E9D9A;
+}
+
+.culture-boldText {
+    font-weight: bold;
+}
+
+.culture-sub-headline {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.culture-c-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5BD8B2;
+    width: 140px;
+    height: 55px;
+    font-weight: bold;
+    font-size: .8rem;
+    box-shadow: 2px 5px 20px black;
+    transition: all .4s;
+}
+
+.culture-c-btn:hover {
+    /*box-shadow: inset 150px 0px 0 0 #31302B;*/
+    background: #31302B;
+    color: #FFF;
+}
+
+.culture-big-r {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+}
+
+
+/* MID SECTION ELEMENTS */
+
+.culture-coffee-beers-logo {
+    margin-bottom: 40px;
+}
+
+.culture-mid-section-story {
+    width: 95%;
+    background: #3E3C36;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px 60px;
+}
+
+.culture-mid-section-story-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.culture-mid-section-story-para {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.culture-mid-section-happy-people {
+    width: 100%;
+    padding: 60px 20px;
+    margin: 10px auto 0;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.culture-mid-section-happy-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #3E3C36;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.culture-mid-section-happy-para {
+    color: #5BD8B2;
+    line-height: 1.5;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+/* MEDIA QUERIES ALL THROUGHOUT 1024PX */
+
+@media(min-width: 425px){
+    .culture-pic-overlay {
+        height: 80%;
+    }
+
+    .culture-big-r {
+        width: 85px;
+    }
+}
+@media(min-width:500px){
+    .culture-main-headline {
+        font-size: 2.5rem;
+    }
+
+    .culture-big-r {
+        width: 95px;
+    }
+
+    .culture-pic-overlay {
+        height: 73%;
+    }
+}
+
+@media(min-width:768px){
+    .culture-main-headline {
+        font-size: 2.95rem;
+    }
+    .culture-sub-headline {
+        width: 84%;
+    }
+
+    .culture-pic-containers-title-btm {
+        font-size: 1.95rem;
+        top: 30%;
+        width: 80%
+    }
+
+    .culture-pic-containers-info {
+        font-size: 1rem;
+        left: 40%;
+    }
+
+    .culture-pic-overlay {
+        height: 60%;
+        background: linear-gradient(rgba(62,60,54,1), 95%, rgba(62,60,54,.0));
+    }
+
+    .culture-big-r {
+        width: 124px;
+    }
+
+}
+
+@media(min-width:900px){
+    .culture-pic-section-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .culture-pic-containers {
+        width: 32%;
+    }
+
+    .culture-pic-btm {
+        flex-grow: 2;
+    }
+
+    .culture-pic-containers-info {
+        left: 25%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .culture-main-pic-top-container {
+        height: 1050px;
+    }
+
+    .culture-main-headline{
+        font-size: 3.55rem;
+    }
+
+    .culture-big-r {
+        width: 164px;
+    }
+
+    .mid-section-story-para {
+        width: 80%;
+        font-size: 1.25rem;
+    }
+
+    .culture-mid-section-happy-people {
+        padding: 40px 40px 60px;
+    }
+
+}
+
+@media(min-width: 1440px) {
+    .culture-pic-overlay {
+        height: 55%;
+    }
+
+    .culture-big-r {
+        width: 184px;
+    }
+
+    .culture-main-pic-top-container {
+        height: 1250px;
+    }
+
+    .culture-main-headline {
+        font-size: 4rem;
+    }
+
+    .culture-sub-headline {
+        width: 64%;
+    }
+
+    .culture-mid-section-story {
+        padding-left: 50px;
+    }
+
+}

@@ -1,0 +1,361 @@
+
+/* colors fonts
+light sea green = #5BD8B2
+lightgraytext = #9E9D9A
+darkbrown = #3E3C36
+lightgraybckgnd = #f2f2f2
+font-family: 'Open Sans', sans-serif;
+font-family: 'Helvetica', sans-serif; main body font
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+
+
+*/
+
+/* FONTS */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Source+Sans+Pro:200';
+
+
+.margin-btm {
+    margin-bottom: 40px;
+ }
+
+.home-main-pic-top-container {
+    position: relative;
+    padding-top: 6%;
+    margin: 0 auto;
+    width: 95%;
+    height: 550px;
+    background: url('../img/mainbackgroundimg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.home-pic-overlay {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+    background: white;
+    color: black;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.home-backgroundimg-text-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.home-backgroundimg-text-top {
+    margin: 0 0 35px 0;
+    color: white;
+    font-size: .9rem;
+}
+
+.home-boldText {
+    font-weight: bold;
+}
+
+.home-main-headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+.home-sub-headline {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.home-c-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5BD8B2;
+    width: 140px;
+    height: 55px;
+    font-weight: 400;
+    transition: all .4s;
+}
+
+.home-c-btn:hover {
+    box-shadow: inset 150px 0px 0 0 #31302B;
+    color: #FFF;
+}
+
+
+/* MID SECTION ELEMENTS */
+
+.home-mid-section-wedo {
+    position: relative;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    background: #f2f2f2;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 30px 60px;
+}
+
+.home-mid-section-wedo-text {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 2.55rem;
+    color: #3E3C36;
+}
+
+.home-mid-section-wedo-subtext {
+    font-size: .9rem;
+    font-weight: normal;
+    color: #9e9d9a;
+}
+
+.home-people-logo-box {
+    width: 75px;
+    height: 75px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+}
+
+.home-mid-section-story {
+    width: 95%;
+    background: #3E3C36;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 30px 60px;
+}
+
+.home-mid-section-story-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.home-mid-section-story-para {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #9E9D9A;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.home-mid-section-start-project {
+    font-weight: bold;
+    color: #5BD8B2;
+}
+
+.home-mid-section-happy-people {
+    width: 95%;
+    padding: 40px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-mid-section-happy-title {
+    text-align: center;
+    font-size: 1.95rem;
+    color: #9E9D9A;
+    font-weight: bold;
+}
+
+.home-mid-section-happy-title::after {
+    content: ' People';
+    color: #5BD8B2;
+
+}
+
+.home-mid-section-happy-para {
+    color: #9E9D9A;
+    line-height: 1.5;
+    font-size: 1.35rem;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* PICTURE SECTION */
+
+.home-pic-containers {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    color: white;
+}
+
+.home-pic-containers img {
+    max-width: 100%;
+}
+
+.home-pic-containers-title {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    font-size: 1.5rem;
+}
+
+.home-pic-containers-info {
+    font-size: .8rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 12.5%;
+    left: 15%;
+}
+
+.home-pic-section-overlay {
+    width: 100%;
+    height: 61%;
+    position: absolute;
+    background: white;
+    bottom: 0px;
+    opacity: .2;
+}
+
+.home-pic-containers-title-btm {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.home-pic-containers-sub-btm {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    font-size: .9rem;
+}
+
+.home-strong {
+    font-weight: bold;
+}
+
+/* TOGGLE SECTION */
+
+.toggle-divs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    width: 95%;
+    margin: 0 auto;
+    border-top: 2px solid #f2f2f2;
+    color: black;
+    transition: all .5s ease-in-out;
+}
+
+.toggle-divs:hover {
+    box-shadow: inset 1600px 0px 0 0 #31302B;
+    color: #FFF;
+}
+
+.toggle-divs-left-title {
+    font-weight: bold;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.toggle-divs-left-sub {
+    display: inline-block;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.toggle-para {
+    display: none;
+    padding-right: 10px;
+    font-size: .9rem;
+    font-style: italic;
+}
+
+.toggle-divs-right{
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+
+
+/* MEDIA QUERIES ALL THROUGHOUT 1024PX */
+
+@media(min-width:500px){
+    .home-main-headline {
+        font-size: 2.5rem;
+    }
+
+    .home-pic-containers-title-btm {
+        font-size: 1.5rem;
+        top: 30%;
+        width: 80%
+    }
+}
+
+@media(min-width:768px){
+    .home-main-headline {
+        font-size: 2.95rem;
+    }
+    .home-sub-headline {
+        width: 65%;
+    }
+
+    .home-pic-containers-title-btm {
+        font-size: 1.95rem;
+        width: 80%
+    }
+
+    .home-pic-containers-info {
+        font-size: 1rem;
+        left: 40%;
+    }
+}
+
+@media(min-width:900px){
+    .home-pic-section-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home-pic-containers {
+        width: 32%;
+    }
+
+    .home-pic-btm {
+        flex-grow: 2;
+    }
+
+    .home-pic-containers-info {
+        left: 25%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .home-main-headline{
+        font-size: 3.55rem;
+    }
+
+    .home-mid-section-story-para {
+        width: 80%;
+        font-size: 1.25rem;
+    }
+
+    .home-mid-section-happy-people {
+        padding: 40px 40px 60px;
+    }
+
+}
